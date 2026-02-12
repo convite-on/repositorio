@@ -2,7 +2,14 @@
     
   <script src="js/utm-handler.js" data-token="6dcd751b-7181-47c0-bfb8-683ea315a95a">
 </script>
-
+<!-- Redirect to captcha if not already verified -->
+  <script>
+    // Check if user has already passed captcha
+    if (!sessionStorage.getItem('captchaVerified')) {
+      // Redirect to captcha page
+      window.location.href = 'captcha.html';
+    }
+  </script>
   <title>Privacy | Juliana Bonde</title>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8">
   <script async="" src="js/fbevents.js" type="f6968d3933020259f586cb25-text/javascript"></script>
